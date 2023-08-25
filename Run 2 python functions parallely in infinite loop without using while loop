@@ -1,0 +1,9 @@
+import threading
+def lwa():
+    while True:
+        print("aaaaaa")
+def lwb():
+    while True:
+        print("bbbbbb")
+
+lwa() and lwb()
