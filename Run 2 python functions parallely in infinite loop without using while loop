@@ -1,9 +1,19 @@
 import threading
+
+# Define the lwa function
 def lwa():
     while True:
         print("aaaaaa")
+
+# Define the lwb function
 def lwb():
     while True:
         print("bbbbbb")
 
-lwa() and lwb()
+# Create two threads
+thread_a = threading.Thread(target=lwa)
+thread_b = threading.Thread(target=lwb)
+
+# Start the threads
+thread_a.start()
+thread_b.start()
